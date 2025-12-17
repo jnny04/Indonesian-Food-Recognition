@@ -1,4 +1,4 @@
-# 🇮🇩 Indonesian Food Recognition & Nutrition Analysis using YOLOv8
+# Indonesian Food Recognition & Nutrition Analysis using YOLOv8
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![YOLOv8](https://img.shields.io/badge/Model-YOLOv8-green)
@@ -38,3 +38,21 @@ Proyek ini merupakan bagian dari *backend engine* untuk aplikasi mobile **"EatWe
 | Sate Ayam | 0.86 | 0.84 | 0.81 |
 | Test Set | 0.88 | 0.84 | 0.89 |
 
+## Implementasi & Deployment
+
+Sistem ini dirancang dengan arsitektur **Client-Server**. Model YOLOv8 di-hosting di cloud, sementara aplikasi Android bertindak sebagai client yang mengirim gambar.
+
+### 1. Arsitektur Sistem
+```mermaid
+graph LR
+    A[📱 Android App (EatWell)] -- POST Image --> B((Hugging Face Space))
+    B -- 1. Detect Object --> C[YOLOv8 Model]
+    C -- 2. Map Nutrition --> D[Nutrition DB]
+    D -- Return JSON (Label & Nutrition) --> A
+```
+### 2. Deployment Platform
+Model dideploy menggunakan Hugging Face Spaces dengan antarmuka Gradio. Ini memungkinkan model diakses baik melalui Web Interface maupun melalui API endpoint.
+- Platform: Hugging Face Spaces
+- Interface: Gradio SDK
+- Status: Running 🟢
+- Demo URL: (https://huggingface.co/spaces/Jenny0412/api-nutrisi-makanan)
