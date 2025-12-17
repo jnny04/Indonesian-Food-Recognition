@@ -35,7 +35,7 @@ Proyek ini merupakan bagian dari *backend engine* untuk aplikasi mobile **"EatWe
 | Stage | Precision | Recall | mAP50 |
 | :--- | :---: | :---: | ---: |
 | Phase I | 0.89 | 0.81 | 0.81 |
-| Sate Ayam | 0.86 | 0.84 | 0.81 |
+| Phase II | 0.86 | 0.84 | 0.81 |
 | Test Set | 0.88 | 0.84 | 0.89 |
 
 ## Implementasi & Deployment
