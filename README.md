@@ -45,7 +45,7 @@ Sistem ini dirancang dengan arsitektur **Client-Server**. Model YOLOv8 di-hostin
 ### 1. Arsitektur Sistem
 ```mermaid
 graph LR
-    A[📱 Android App (EatWell)] -- POST Image --> B((Hugging Face Space))
+    A[Android App (EatWell)] -- POST Image --> B((Hugging Face Space))
     B -- 1. Detect Object --> C[YOLOv8 Model]
     C -- 2. Map Nutrition --> D[Nutrition DB]
     D -- Return JSON (Label & Nutrition) --> A
@@ -56,3 +56,6 @@ Model dideploy menggunakan Hugging Face Spaces dengan antarmuka Gradio. Ini memu
 - Interface: Gradio SDK
 - Status: Running 🟢
 - Demo URL: (https://huggingface.co/spaces/Jenny0412/api-nutrisi-makanan)
+
+---
+Created by Ratu Rinjanhei Macinnes - Informatics Student
