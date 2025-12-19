@@ -14,12 +14,24 @@ Proyek ini merupakan bagian dari *backend engine* untuk aplikasi mobile **"EatWe
 ## Fitur Utama
 * **Deteksi Akurat:** Menggunakan arsitektur YOLOv8 (You Only Look Once) untuk deteksi real-time.
 * **Analisis Nutrisi:** *Mapping* otomatis dari label deteksi ke database nutrisi (`nutrition_data.csv`).
-* **Kategori Makanan:** Melatih model pada `[Masukkan Jumlah]` kelas makanan Indonesia, termasuk:
-    * Nasi Goreng
-    * Sate Ayam
-    * Rendang
-    * Gado-gado
-    * *[Sebutkan list makanan utamamu lainnya]*
+* **Kategori Makanan:** Melatih model pada `16` kelas makanan Indonesia, termasuk:
+   *cakwe
+   *dadar gulung
+   *ikan goreng
+   *klepon
+   *lontong sayur
+   *martabak manis
+   *mie goreng
+   *nasi padang
+   *rendang
+   *risol
+   *rujak buah
+   *sayur asem
+   *soto ayam
+   *nasi goreng
+   *rawon
+   *sate
+
 
 ## Struktur Folder
 ```text
